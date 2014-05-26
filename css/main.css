@@ -101,6 +101,10 @@ textarea {
     color:#34495e;
 }
 
+#hello > *, .projectPage > * {
+    display:none;
+}
+
 html, body{
     height:100%;
     padding:0px;
@@ -189,7 +193,7 @@ a > i:hover, a > p:hover{
     margin-top:50px;
     background-color:#ecf0f1;
     padding:5px 10px;
-    float:right;
+    position:fixed;
 }
 /* ==========================================================================
    Specifics

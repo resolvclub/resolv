@@ -1,4 +1,6 @@
 $(document).ready(function(){
+	$('#hello > *').fadeIn(1000);
+	$('.projectPage > *').fadeIn(1000);
 	var menuDown = true;
 	var thin = false;
 	var amt;
