@@ -14,6 +14,7 @@
 
         <link rel='stylesheet' href='css/normalize.css'>
         <link rel='stylesheet' href='https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css'>
+        <link href="https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
         <link rel='stylesheet' href='css/flat-ui.css'>
         <link rel='stylesheet' href='css/main.css'>
         <script src='js/vendor/modernizr-2.6.2.min.js'></script>
@@ -31,7 +32,7 @@
                 <li><a href='#home' title='Home'>Home</a></li>
             </ul>
         </nav>
-            
+            <a><span class='menuToggle fui-list'></span></a>
             <section id='home'>
                 <div id="hello">
                     <h1>RESOLV</h1>
@@ -40,33 +41,80 @@
                 </div>
             </section>
             
-            <section id='people' style="background-color:">
+            <section id="people">
                 <div class="progress">
-                    <div class="progress-bar" style="width:33.33%; background-color:#2980b9;"></div>
-                    <div class="progress-bar" style="width:33.33%; background-color:#c0392b;"></div>
-                    <div class="progress-bar" style="width:33.33%; background-color:#16a085;"></div>
+                    <div class="progress-bar" style="width:100%; background-color:#649FB5;"></div>
                 </div>
                 <h2><span class="fui-user"></span>People</h2>
-                <div class='profile'>
-                    <div class="circular"><img src="images/profiles/brandon.jpg" alt="" /></div>
-                    <p class='lead'>Brandon Truong - President</p>
+                <div class='profiles'>
+                    <div class="profile">
+                       <div class="circular"><img src="images/profiles/brandon.jpg" alt="" /></div>
+                        <p class='lead person'>Brandon Truong - President</p> 
+                    </div>
+                    <div class="profile">
+                        <div class="circular"><img src="images/profiles/brandon.jpg" alt="" /></div>
+                        <p class='lead person'>Lucille Tang - Vice President</p>
+                    </div>
+                    <div class="profile">
+                        <div class="circular"><img src="images/profiles/brandon.jpg" alt="" /></div>
+                        <p class='lead person'>Justin Du - Head of Outreach</p>
+                    </div>
+                    <div class="profile">
+                        <div class="circular"><img src="images/profiles/brandon.jpg" alt="" /></div>
+                        <p class='lead person'>Andrew Tian - Head of Technology</p>
+                    </div>
+                    <div class="profile">
+                        <div class="circular"><img src="images/profiles/brandon.jpg" alt="" /></div>
+                        <p class='lead person'>Johnathan Huang - Head of Finances</p>
+                    </div>
+                    <div class="profile">
+                        <div class="circular"><img src="images/profiles/brandon.jpg" alt="" /></div>
+                        <p class='lead person'>Helen Shi - Head of Communications</p>
+                    </div>
+                    <div class="profile">
+                        <div class="circular"><img src="images/profiles/brandon.jpg" alt="" /></div>
+                        <p class='lead person'>Aly Ashraf - Head of Logistics</p>
+                    </div>
                 </div>
             </section>
+            
             <section id='projects'>
                 <div class="progress">
-                    <div class="progress-bar" style="width:33.33%; background-color:#2980b9;"></div>
-                    <div class="progress-bar" style="width:33.33%; background-color:#c0392b;"></div>
-                    <div class="progress-bar" style="width:33.33%; background-color:#16a085;"></div>
+                    <div class="progress-bar" style="width:100%; background-color:#C12E50;"></div>
                 </div>
                 <h2><span class="fui-new"></span>Projects</h2>
+                <div class="projectContainer">
+                    <a href="minecraft.html" class='project'>
+                        <p class="lead">Minecraft</p>
+                    </a>
+                    <a href="ideafest.html" class='project'>
+                        <p class="lead">IdeaFest</p>
+                    </a>
+                    <a href="smokefree.html" class='project'>
+                        <p class="lead">Smoke Free</p>
+                    </a>
+                    <a href="mikey.html" class='project'>
+                        <p class="lead">Mikey's Run</p>
+                    </a>
+                </div>
             </section>
+            
             <section id='contact'>
                 <div class="progress">
-                    <div class="progress-bar" style="width:33.33%; background-color:#2980b9;"></div>
-                    <div class="progress-bar" style="width:33.33%; background-color:#c0392b;"></div>
-                    <div class="progress-bar" style="width:33.33%; background-color:#16a085;"></div>
+                    <div class="progress-bar" style="width:100%; background-color:#B5AD30;"></div>
                 </div>
                 <h2><span class="fui-mail"></span>Contact</h2>
+                <p class="lead" style="margin:0">Say hello</p>
+                <p class="lead"><a href="mailto:untresolv@gmail.com"> untresolv@gmail.com</a></p>
+                <a href="https://www.facebook.com/resolv.unt">
+                    <i class="fa fa-facebook-square fa-4x"></i>
+                </a>
+                <a href="https://www.facebook.com/resolv.unt">
+                    <i class="fa fa-twitter-square fa-4x"></i>
+                </a>
+                <a href="https://www.facebook.com/resolv.unt">
+                    <i class="fa fa-git-square fa-4x"></i>
+                </a>
             </section>
         <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
         <script>window.jQuery || document.write("<script src='js/vendor/jquery-1.10.2.min.js'><\/script>")</script>
@@ -75,10 +123,6 @@
         <script src='js/jquery-ui-1.10.3.custom.min.js'></script>
         <script src='js/jquery.ui.touch-punch.min.js'></script>
         <script src='js/bootstrap.min.js'></script>
-        <script src='js/bootstrap-select.js'></script>
-        <script src='js/bootstrap-switch.js'></script>
-        <script src='js/flatui-checkbox.js'></script>
-        <script src='js/flatui-radio.js'></script>
         <script src='js/jquery.tagsinput.js'></script>
         <script src='js/jquery.placeholder.js'></script>
         <script src='js/plugins.js'></script>
