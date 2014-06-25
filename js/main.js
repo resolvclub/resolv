@@ -16,5 +16,6 @@ $(document).ready(function(){
 			$('.menuToggle').animate({marginTop: "+=" + amt.toString() + "px"}, 500);
 			menuDown = true;
 		}
-	})
+	});
+
 });
