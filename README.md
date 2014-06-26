@@ -1,5 +1,5 @@
 # RESOLV Site
-This is the RESOLV website: [untresolv.org](http://resolv.club)
+This is the RESOLV website: [resolv.club](http://resolv.club)
 
 Created by Brandon Truong
 
