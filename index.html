@@ -25,6 +25,7 @@
         <![endif]-->
         <nav role='navigation'>
             <a class="logo" href="#home"><h6>resolv</h6></a>
+            <a class="menuToggle"><span class='fui-list'></span></a>
             <ul>
                 <li><a href='#contact' title='Contact'>Contact</a></li>
                 <li><a href='#projects' title='Projects'>Projects</a></li>
@@ -32,7 +33,7 @@
                 <li><a href='#home' title='Home'>Home</a></li>
             </ul>
         </nav>
-            <a><span class='menuToggle fui-list'></span></a>
+            
             <section id='home'>
                 <div id="hello">
                     <h1 class="logo">resolv</h1>
@@ -43,7 +44,7 @@
             
             <section id="people">
                 <div class="progress">
-                    <div class="progress-bar" style="width:100%; background-color:#649FB5;"></div>
+                    <div class="progress-bar" style="width:100%; background-color:#34495e;"></div>
                 </div>
                 <h2><span class="fui-user"></span>People</h2>
                 <div class='profiles'>
@@ -52,27 +53,27 @@
                         <p class='lead person'>Brandon Truong - President</p> 
                     </div>
                     <div class="profile">
-                        <div class="circular"><img src="images/profiles/brandon.jpg" alt="" /></div>
+                        <div class="circular"><img src="images/profiles/lucille.jpg" alt="" /></div>
                         <p class='lead person'>Lucille Tang - Vice President</p>
                     </div>
                     <div class="profile">
-                        <div class="circular"><img src="images/profiles/brandon.jpg" alt="" /></div>
-                        <p class='lead person'>Justin Du - Head of Outreach</p>
+                        <div class="circular"><img src="images/profiles/justin.jpg" alt="" /></div>
+                        <p class='lead person'>Justin Du - Head of Marketing</p>
                     </div>
                     <div class="profile">
-                        <div class="circular"><img src="images/profiles/brandon.jpg" alt="" /></div>
+                        <div class="circular"><img src="images/profiles/andrew.jpg" alt="" /></div>
                         <p class='lead person'>Andrew Tian - Head of Technology</p>
                     </div>
                     <div class="profile">
-                        <div class="circular"><img src="images/profiles/brandon.jpg" alt="" /></div>
+                        <div class="circular"><img src="images/profiles/jonathan.jpg" alt="" /></div>
                         <p class='lead person'>Johnathan Huang - Head of Finances</p>
                     </div>
                     <div class="profile">
-                        <div class="circular"><img src="images/profiles/brandon.jpg" alt="" /></div>
+                        <div class="circular"><img src="images/profiles/helen.jpg" alt="" /></div>
                         <p class='lead person'>Helen Shi - Head of Communications</p>
                     </div>
                     <div class="profile">
-                        <div class="circular"><img src="images/profiles/brandon.jpg" alt="" /></div>
+                        <div class="circular"><img src="images/profiles/aly.jpg" alt="" /></div>
                         <p class='lead person'>Aly Ashraf - Head of Logistics</p>
                     </div>
                 </div>
@@ -80,7 +81,7 @@
             
             <section id='projects'>
                 <div class="progress">
-                    <div class="progress-bar" style="width:100%; background-color:#C12E50;"></div>
+                    <div class="progress-bar" style="width:100%; background-color:#34495e;"></div>
                 </div>
                 <h2><span class="fui-new"></span>Projects</h2>
                 <div class="projectContainer">
@@ -96,12 +97,13 @@
                     <a href="mikey.html" class='project'>
                         <p class="lead">Mikey's Run</p>
                     </a>
+                    <a><p class="lead">Many more coming soon...</p></a>
                 </div>
             </section>
             
             <section id='contact'>
                 <div class="progress">
-                    <div class="progress-bar" style="width:100%; background-color:#B5AD30;"></div>
+                    <div class="progress-bar" style="width:100%; background-color:#34495e;"></div>
                 </div>
                 <h2><span class="fui-mail"></span>Contact</h2>
                 <p class="lead" style="margin:0">Say hello</p>
@@ -128,12 +130,14 @@
         <script src='js/plugins.js'></script>
         <script src='js/main.js'></script>
         <script>
-            // (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            // function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            // e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            // e.src='//www.google-analytics.com/analytics.js';
-            // r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            // ga('create','UA-XXXXX-X');ga('send','pageview');
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-52313842-1', 'auto');
+          ga('send', 'pageview');
+
         </script>
     </body>
 </html>

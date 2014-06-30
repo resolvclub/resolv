@@ -101,8 +101,16 @@ textarea {
   src: url('../fonts/font.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
 }
 
+.menuToggle{
+    display:none;
+}
+
 *, a{
-    color:#34495e;
+/*    color:#34495e;*/
+}
+
+a{
+    color:#4CCEC2;
 }
 
 .logo{
@@ -127,16 +135,17 @@ section{
 }
 
 nav{
-    background-color:#ecf0f1;
+    /*background-color:#ecf0f1;*/
     height:50px;
-    padding-left:10px;
     display:block;
     position:fixed;
     width:100%;
+    z-index:1000;
 }
 
 nav h6{
     float:left;
+    margin-left:10px;
 }
 
 nav ul{
@@ -185,6 +194,7 @@ h2{
 
 h2 span{
     margin-right:10px;
+    color:#89D94D;
 }
 
 a > i, a > p{
@@ -197,12 +207,10 @@ a > i:hover, a > p:hover{
     color:#bdc3c7;
 }
 
-.menuToggle{
-    margin-top:50px;
-    background-color:#ecf0f1;
-    padding:5px 10px;
-    position:fixed;
+#home p, h2 span{
+    color:#4CCEC2;
 }
+
 /* ==========================================================================
    Specifics
    ========================================================================== */
@@ -212,13 +220,26 @@ a > i:hover, a > p:hover{
 */
 
 #home{
-    padding-top:15%;
+    padding-top:10%;
+    padding-bottom:30px;
+    height:auto;
+    background-image:url(../images/splash/hello.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: 0px -100px;
+}
+
+h1.logo{
+    /*text-shadow: 0px 0px 30px rgba(255, 255, 255, 1);*/
+    color:#FFF;
+    font-size:3em;
 }
 
 #home p{
     width:769px;
     margin-left:auto;
     margin-right:auto;
+    margin-bottom:0px;
 }
 
 /*
@@ -226,7 +247,6 @@ a > i:hover, a > p:hover{
 */
 
 #people{
-    background-color:#8DE1FF;
     min-height:1000px;
 }
 
@@ -256,8 +276,8 @@ a > i:hover, a > p:hover{
     Projects
 */
 
-#projects{
-    background-color:#FF3D69;
+.projectContainer a{
+    color:#34495e;
 }
 
 .projectContainer{
@@ -272,7 +292,11 @@ a > i:hover, a > p:hover{
 */
 
 #contact{
-    background-color:#FFF443;
+    background-color:#34495e;
+}
+
+#contact > *{
+    color:white !important;
 }
 
 .projectPage{
@@ -286,37 +310,66 @@ a > i:hover, a > p:hover{
    Mobile Changes
    ========================================================================== */
 @media (max-width:768px){
+
+    .menuToggle{
+        background-color:#ecf0f1;
+        padding:8px;
+        position:fixed;
+        float:right;
+    }
     nav{
         background-color:#ecf0f1;
         display:block;
         position:fixed;
         width:100%;
-        height:260px;
+        height:50px;
         text-align:center;
         padding:none;
+
+    }
+    
+    nav ul{
+        padding:0;
+        width:100%;
+        background-color:inherit;
+        display:none;
     }
 
-    nav h6{
+    nav .logo{
+        width:70px;
         float:none;
-        margin-left:-10px;
+        font-size:300px;
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    nav .logo h6{
+        font-size:25px;
+        margin-left:0;
     }
 
     nav ul li{
-        display:block;
         width:100%;
         float:none;
     }
 
     nav ul li a{
-        padding:10px;
         width:100%;
-        margin-left:-30px;
         float:left;
     }
 
     .menuToggle{
-        margin-top:260px;
+        margin-top:0px;
         display:block;
+    }
+
+    #home{
+        padding-top:30px;
+        padding-bottom:30px;
+        min-width:100%;
+        background-size:cover;
+        background-position: 0px 0px;
     }
 
     #home p{
@@ -331,12 +384,24 @@ a > i:hover, a > p:hover{
     .profiles{
         width:100%;
         float:none;
-
     }
 
     .profile{
         width:100%;
         float:none;
+    }
+
+    .projectPage{
+        width:100%;
+        padding:10px
+    }
+    
+    .projectPage p{
+        font-size:1.2em;
+    }
+    
+    .projectContainer {
+        width:100%;
     }
 
     .projectContainer > section > img{
