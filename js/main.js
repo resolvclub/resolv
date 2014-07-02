@@ -13,4 +13,15 @@ $(document).ready(function(){
 		}
 	});
 
+	window.addEventListener("scroll",function() { 
+		
+   if(window.scrollY > $("section#home").height()) {
+      $('nav').animate({backgroundColor: "#ecf0f1"}, {duration: 100});
+      console.log(1);
+   }
+   else {
+      $('nav').animate({backgroundColor: "transparent"}, {duration: 100});
+      console.log(2);
+   }
+},false);
 });
