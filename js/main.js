@@ -14,7 +14,6 @@ $(document).ready(function(){
 	});
 
 	window.addEventListener("scroll",function() { 
-		
    if(window.scrollY > $("section#home").height()) {
       $('nav').animate({backgroundColor: "#ecf0f1"}, {duration: 100});
       console.log(1);
@@ -23,5 +22,13 @@ $(document).ready(function(){
       $('nav').animate({backgroundColor: "transparent"}, {duration: 100});
       console.log(2);
    }
-},false);
+	},false);
+
+	$(window).resize(function(){
+		if($(window).width() > 768){
+			$('nav ul').slideDown(300);
+			menuDown = true;
+		}
+	});
+
 });
