@@ -16,12 +16,12 @@ $(document).ready(function(){
 	window.addEventListener("scroll",function() { 
    if(window.scrollY > $("section#home").height()) {
       $('nav').animate({backgroundColor: "#ecf0f1"}, {duration: 100});
-      console.log(1);
    }
    else {
       $('nav').animate({backgroundColor: "transparent"}, {duration: 100});
-      console.log(2);
    }
+   var yPos = $(window).scrollY / 2;
+   $("#home").css("backgroundPosition", yPos);
 	},false);
 
 	$(window).resize(function(){
@@ -29,6 +29,12 @@ $(document).ready(function(){
 			$('nav ul').slideDown(300);
 			menuDown = true;
 		}
+	});
+
+	$(".projectToggle").click(function(){
+		if($(this).siblings(".projectContent").css("display") == "none")
+			$(this).siblings(".projectContent").slideDown();
+		else $(this).siblings(".projectContent").slideUp();
 	});
 
 });
