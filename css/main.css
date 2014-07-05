@@ -113,6 +113,11 @@ a{
     color:#4CCEC2;
 }
 
+.container{
+    padding:20px;
+    padding-bottom:50px;
+}
+
 .logo{
   font-family: 'logo', Arial, sans-serif;
 }
@@ -129,7 +134,6 @@ html, body{
 
 section{
     height:100%;
-    padding:0;
     margin:0;
     text-align:center;
 }
@@ -159,6 +163,7 @@ nav ul li a{
 .fake-link{
     margin-top:20px;
     display:block;
+    cursor:pointer;
 }
 
 a:hover, .fake-link:hover{
@@ -221,8 +226,7 @@ a > i:hover, a > p:hover{
 */
 
 #home{
-    padding-top:10%;
-    padding-bottom:30px;
+    padding:10% 0;
     height:auto;
     background-image:url(../images/splash/hello.jpg);
     z-index:500;
@@ -234,7 +238,7 @@ a > i:hover, a > p:hover{
 h1.logo{
     /*text-shadow: 0px 0px 30px rgba(255, 255, 255, 1);*/
     color:#FFF;
-    font-size:3em;
+    font-size:4em;
 }
 
 #home p{
@@ -249,7 +253,14 @@ h1.logo{
 */
 
 #people{
-    min-height:1000px;
+    height:auto;
+    overflow-y:hidden;
+}
+
+#people p{
+    max-width:900px;
+    margin-left:auto;
+    margin-right:auto;f
 }
 
 #people .profiles{
@@ -331,10 +342,18 @@ p.person{
     margin-right:auto;
 }
 
-
 /* ==========================================================================
    Mobile Changes
    ========================================================================== */
+@media (max-width: 900px){
+    #home{
+        padding-top:30px;
+        padding-bottom:30px;
+        min-width:100%;
+        background-size:cover;
+        background-position: 0px -50px;
+    }
+}
 @media (max-width:768px){
 
     .menuToggle{
